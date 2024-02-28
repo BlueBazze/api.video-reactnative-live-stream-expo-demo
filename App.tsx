@@ -4,10 +4,10 @@ import Demo from "./src/Demo";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <>
       <StatusBar animated={true} style="light" />
       <Demo />
-    </View>
+    </>
   );
 }
 
