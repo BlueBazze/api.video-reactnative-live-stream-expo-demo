@@ -1,5 +1,3 @@
-import { StatusBar } from "expo-status-bar";
-
 import * as React from "react";
 import {
   View,
@@ -29,7 +27,7 @@ export interface ISettingsState {
   streamKey: string;
 }
 
-export default function App() {
+export default function Demo() {
   // LOCAL STATE
   // Stream view
   const [streaming, setStreaming] = React.useState(false);
@@ -130,8 +128,6 @@ export default function App() {
   // RETURN
   return (
     <View style={style.container}>
-      <StatusBar animated={true} style="light" />{" "}
-      {/* barStyle="light-content" */}
       <ApiVideoLiveStreamView
         style={style.livestreamView}
         ref={ref}

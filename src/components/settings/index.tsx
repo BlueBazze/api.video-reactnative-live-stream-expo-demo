@@ -12,7 +12,7 @@ import styles from "./style";
 import assets from "../../assets";
 
 import type { PredefinedResolution } from "@api.video/react-native-livestream/src";
-import { ISettingsState } from "../../App";
+import { ISettingsState } from "../../Demo";
 
 interface ISettingsProps {
   closeSettings: () => void;
