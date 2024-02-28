@@ -6,6 +6,7 @@ export default function App() {
   return (
     <>
       <StatusBar animated={true} style="light" />
+
       <Demo />
     </>
   );

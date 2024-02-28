@@ -15,7 +15,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.api.video.reactnativelivestreamexpodemo",
+      "infoPlist": {
+        "NSCameraUsageDescription": "For broadcasting",
+        "NSMicrophoneUsageDescription": "For livestreaming",
+      },
     },
     "android": {
       "adaptiveIcon": {
@@ -32,6 +37,17 @@
         "expo-dev-client",
         {
           "launchModeExperimental": "most-recent"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true
+          },
+          "android": {
+            "newArchEnabled": true
+          }
         }
       ]
     ],
